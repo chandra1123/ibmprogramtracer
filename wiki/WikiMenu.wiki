@@ -1,4 +1,6 @@
  * [Welcome Introduction]
+   * [Architecture Underlying components}
  * Pre-requisites
    * [InstallationGuide How to install]
- * [HowToUse Usage and samples]
+ * Using iTrace
+   * [HowToUse Basic samples]
