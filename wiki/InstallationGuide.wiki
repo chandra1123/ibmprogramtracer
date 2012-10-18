@@ -1,7 +1,7 @@
 #summary iTrace installation guide.
 
 = Installation guide =
-In order to successfully install the iTrace tool in an IBM i System, please follow the next steps
+In order to successfully install the *iTrace* tool in an _IBM i System_, please follow the next steps
 
 == Step 1 ==
 Download the [http://ibmprogramtracer.googlecode.com/files/ITRACE.SAVF savf archive] available in the download page.
@@ -35,4 +35,5 @@ Compile the installation CL program:
 
 == Step 5 ==
 Run the installation program. This will compile all the objects:
+
 `CALL BUILDTRACR DESTINATION_LIB`
