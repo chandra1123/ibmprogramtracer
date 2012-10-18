@@ -4,7 +4,7 @@
 In order to successfully install the iTrace tool in an IBM i System, please follow the next steps
 
 == Step 1 ==
-Download the [http://code.google.com/p/ibmprogramtracer/downloads/detail?name=ITRACE.SAVF&can=2&q= savf archive] available in the download page.
+Download the [http://ibmprogramtracer.googlecode.com/files/ITRACE.SAVF savf archive] available in the download page.
 
 == Step 2 ==
 Upload the savf to the IBM i. An example of this procedure can be:
