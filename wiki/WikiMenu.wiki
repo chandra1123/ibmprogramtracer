@@ -4,3 +4,5 @@
    * [InstallationGuide How to install]
  * [HowToUse Using iTrace] 
    * [BasicSamples Basic samples]
+   * [BatchJobTrace Tracing a batch program]
+   * [TestCoverag Test coverage]
