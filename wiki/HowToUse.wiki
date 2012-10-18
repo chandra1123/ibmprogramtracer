@@ -1,6 +1,7 @@
 #summary One-sentence summary of this page.
 
 = How to use =
+----
 The following samples show simple usage scenarios of the iTrace and related tools.
 
 == Command definition ==
