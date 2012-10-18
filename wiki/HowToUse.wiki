@@ -34,6 +34,5 @@ The iTrace tool have the following command definition:
    * *`*`ADD*: keeps all previous data found in the output file
    * *`*`REPLACE*: replaces all previous data found in the output file
  * *Contain the case id*: this is the qualified name of the data area used to correlated a block of trace records with a test case. If the data doesn't exists, iTrace creates it.
- * *Trace for batch job*: this parameter indicate if the traced program is running in a batch mode. If is turned on, the trace records will used the "Submited Job to Trace" as the value
-for the job/number/user of the trace.
+ * *Trace for batch job*: this parameter indicate if the traced program is running in a batch mode. If is turned on, the trace records will used the "Submited Job to Trace" as the value for the job/number/user of the trace.
  * *Submited job to trace*: indicates the qualified name of the job in which the traced program is running.
