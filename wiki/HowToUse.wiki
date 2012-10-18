@@ -7,20 +7,20 @@ The following samples show simple usage scenarios of the iTrace and related tool
 The iTrace tool have the following command definition:
 
 <pre>
-Trace option setting . . . . . .                 *ON, *OFF`
-Program to trace . . . . . . . .                 Name
-  Library  . . . . . . . . . . .     *LIBL       Name,*LIBL, *CURLIB
-Program Type . . . . . . . . . .   *PGM          *PGM, *SRVPGM
-Trace data to save . . . . . . .   *ALL          *ALL, *FLOWCHG          
-File to receive output . . . . .   TRACEDATA     Name
-  Library  . . . . . . . . . . .     QTEMP       Name, *CURLIB         
-File output options  . . . . . .   *ADD          *ADD, *REPLACE          
-Contains the case id . . . . . .   TRCDTAA       Name                  
-  Library  . . . . . . . . . . .     *CURLIB     Name, *CURLIB         
-Trace for batch job  . . . . . .   *OFF          *ON, *OFF               
-Submited Job to trace  . . . . .                 Name                  
-  User . . . . . . . . . . . . .                 Name                  
-  Number . . . . . . . . . . . .                 000000-999999           
+    Trace option setting . . . . . .                 *ON, *OFF`
+    Program to trace . . . . . . . .                 Name
+      Library  . . . . . . . . . . .     *LIBL       Name,*LIBL, *CURLIB
+    Program Type . . . . . . . . . .   *PGM          *PGM, *SRVPGM
+    Trace data to save . . . . . . .   *ALL          *ALL, *FLOWCHG          
+    File to receive output . . . . .   TRACEDATA     Name
+      Library  . . . . . . . . . . .     QTEMP       Name, *CURLIB         
+    File output options  . . . . . .   *ADD          *ADD, *REPLACE          
+    Contains the case id . . . . . .   TRCDTAA       Name                  
+      Library  . . . . . . . . . . .     *CURLIB     Name, *CURLIB         
+    Trace for batch job  . . . . . .   *OFF          *ON, *OFF               
+    Submited Job to trace  . . . . .                 Name                  
+      User . . . . . . . . . . . . .                 Name                  
+      Number . . . . . . . . . . . .                 000000-999999           
 </pre>
 
  * *Trace option setting*: this parameter turn *on* or *off* the trace mode. When the trace is active, the activity of the program gets logged in the outfile. 
@@ -32,8 +32,10 @@ Submited Job to trace  . . . . .                 Name
  * *File output options*: this parameter can take one of the following values:
    * *`*`ADD*: keeps all previous data found in the output file
    * *`*`REPLACE*: replaces all previous data found in the output file
-
-
+ * *Contain the case id*: this is the qualified name of the data area used to correlated a block of trace records with a test case. If the data doesn't exists, iTrace creates it.
+ * *Trace for batch job*: this parameter indicate if the traced program is running in a batch mode. If is turned on, the trace records will used the "Submited Job to Trace" as the value
+for the job/number/user of the trace.
+ * *Submited job to trace*: indicates the qualified name of the job in which the traced program is running.
 
 == Tracing an interactive program ==
 When tracing a program, first you must "turn on" the iTrace tool, executing the following command:
