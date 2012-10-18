@@ -1,13 +1,31 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= How to use =
+The following samples show simple usage scenarios of the iTrace and related tools.
 
-Add your content here.
+== Command definition ==
+The iTrace tool have the following command definition:
+
+<pre>
+Trace option setting . . . . . .                 *ON, *OFF`
+Program to trace . . . . . . . .                 Name
+  Library  . . . . . . . . . . .     *LIBL       Name,*LIBL, *CURLIB
+Program Type . . . . . . . . . .   *PGM          *PGM, *SRVPGM
+Trace data to save . . . . . . .   *ALL          *ALL, *FLOWCHG          
+File to receive output . . . . .   TRACEDATA     Name
+  Library  . . . . . . . . . . .     QTEMP       Name, *CURLIB         
+File output options  . . . . . .   *ADD          *ADD, *REPLACE          
+Contains the case id . . . . . .   TRCDTAA       Name                  
+  Library  . . . . . . . . . . .     *CURLIB     Name, *CURLIB         
+Trace for batch job  . . . . . .   *OFF          *ON, *OFF               
+Submited Job to trace  . . . . .                 Name                  
+  User . . . . . . . . . . . . .                 Name                  
+  Number . . . . . . . . . . . .                 000000-999999           
+</pre>
+
+ * Trace option setting: this parameter turn on or off the trace mode. When the trace is active, the activity of the program gets logged in the outfile. 
+ * 
 
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Tracing an interactive program ==
+When tracing a program, first you must "turn on" the iTrace tool, executing the following command:
