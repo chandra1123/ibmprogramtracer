@@ -1,5 +1,7 @@
  * [Welcome Introduction]
    * [Architecture Underlying components]
+   * [Foundations Foundations]
+   * [Considerations Usage considerations]
  * Pre-requisites
    * [InstallationGuide How to install]
    * [ConfigurationGuide How to configure]
