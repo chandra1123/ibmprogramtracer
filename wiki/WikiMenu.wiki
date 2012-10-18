@@ -6,4 +6,4 @@
    * [BasicSamples Basic samples]
    * [BatchJobTrace Tracing a batch program]
    * [TestCoverag Test coverage]
- * [Credits&References Credits & References]
+ * [CreditsReferences Credits & References]
