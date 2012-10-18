@@ -1,7 +1,7 @@
 #summary One-sentence summary of this page.
 
 
-https://code.google.com/p/ibmprogramtracer/source/browse/wiki/images/ITraceComponentDiagram.PNG
+https://ibmprogramtracer.googlecode.com/svn/wiki/images/ITraceComponentDiagram.png
 
 = Introduction =
 
