@@ -1,6 +1,38 @@
 #summary iTrace installation guide.
 
-= Introduction =
-This page contains the steps required to install the iTrace tool.
+= Installation guide =
+In order to successfully install the iTrace tool in an IBM i System, please follow the next steps
 
-= Details =
+== Step 1 ==
+Download the [http://code.google.com/p/ibmprogramtracer/downloads/detail?name=ITRACE.SAVF&can=2&q= savf archive] available in the download page.
+
+== Step 2 ==
+Upload the savf to the IBM i. An example of this procedure can be:
+
+ * Bring up the command prompt window: `>Start >run “cmd” [enter]`
+ * Change the directory to the folder on your PC where you saved the downloaded TSX file:
+ * Enter: `CD c:/myfolderpath`
+ * Enter: `FTP xxx.xxx.xxx.xxx` (your IBM i IP address) when FTP prompts you, enter your IBM i User ID & Password
+ * Enter: `binary`
+ * Enter: `quote site namefmt 1`
+ * Enter: `cd /qsys.lib/qgpl.lib`
+ * Enter: `put tsx.savf tsx.savf`
+ * Enter: `quit`
+
+== Step 3 ==
+Restore the uploaded file to the destination library:
+
+`RSTOBJ OBJ(*ALL) SAVLIB(LIBARG) DEV(*SAVF) SAVF(QGPL/ITRACE) RSTLIB(*DESTINATION_LIB*)`
+
+The `SAVLIB` parameter value must be _LIBARG_. The `SAVF` parameter must 
+indicate the library where the itrace.savf was uploaded
+
+== Step 4 ==
+Compile the installation CL program:
+
+`CHGCURLIB DESTINATION_LIB`
+`CRTBNDCL PGM(BUILDTRACR) SRCFILE(QSRCPGM) SRCMBR(BUILDTRACR) OPTION(*EVENTF) REPLACE(*YES) TGTRLS(V6R1M0) DBGVIEW(*SOURCE)`
+
+== Step 5 ==
+Run the installation program. This will compile all the objects:
+`CALL BUILDTRACR DESTINATION_LIB`
