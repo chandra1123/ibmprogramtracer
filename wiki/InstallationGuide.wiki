@@ -32,6 +32,7 @@ indicate the library where the itrace.savf was uploaded
 Compile the installation CL program:
 
 `CHGCURLIB DESTINATION_LIB`
+
 `CRTBNDCL PGM(BUILDTRACR) SRCFILE(QSRCPGM) SRCMBR(BUILDTRACR) OPTION(*EVENTF) REPLACE(*YES) TGTRLS(V6R1M0) DBGVIEW(*SOURCE)`
 
 == Step 5 ==
