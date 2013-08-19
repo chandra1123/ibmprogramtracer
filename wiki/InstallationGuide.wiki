@@ -17,7 +17,7 @@ Upload the savf to the IBM i. An example of this procedure can be:
  * Enter: `binary`
  * Enter: `quote site namefmt 1`
  * Enter: `cd /qsys.lib/qgpl.lib`
- * Enter: `put tsx.savf tsx.savf`
+ * Enter: `put itrace.savf itrace.savf`
  * Enter: `quit`
 
 == Step 3 ==
