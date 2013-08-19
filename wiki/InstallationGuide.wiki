@@ -11,7 +11,7 @@ Download the [http://ibmprogramtracer.googlecode.com/files/ITRACE.SAVF savf arch
 Upload the savf to the IBM i. An example of this procedure can be:
 
  * Bring up the command prompt window: `>Start >run “cmd” [enter]`
- * Change the directory to the folder on your PC where you saved the downloaded TSX file:
+ * Change the directory to the folder on your PC where you saved the downloaded iTrace file:
  * Enter: `CD c:/myfolderpath`
  * Enter: `FTP xxx.xxx.xxx.xxx` (your IBM i IP address) when FTP prompts you, enter your IBM i User ID & Password
  * Enter: `binary`
