@@ -21,12 +21,7 @@ Upload the savf to the IBM i. An example of this procedure can be:
  * Enter: `quit`
 
 == Step 3 ==
-Restore the uploaded file to the destination library:
-
-`RSTOBJ OBJ(*ALL) SAVLIB(LIBARG) DEV(*SAVF) SAVF(QGPL/ITRACE) RSTLIB(*DESTINATION_LIB*)`
-
-The `SAVLIB` parameter value must be _LIBARG_. The `SAVF` parameter must 
-indicate the library where the itrace.savf was uploaded
+Unpack the uploaded file using `RSTLIB`
 
 == Step 4 ==
 Compile the installation CL program:
