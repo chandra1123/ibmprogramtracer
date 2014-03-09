@@ -1,4 +1,4 @@
-#summary iTrace main componentes and their relations
+#summary iTrace main components and their relations
 
 
 https://ibmprogramtracer.googlecode.com/svn/wiki/images/ITraceComponentDiagram.png
