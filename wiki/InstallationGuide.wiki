@@ -5,7 +5,7 @@
 In order to successfully install the *iTrace* tool in an _IBM i System_, please follow the next steps
 
 == Step 1 ==
-Download the [http://ibmprogramtracer.googlecode.com/files/ITRACE.SAVF savf archive] available in the download page.
+Download the [http://ibmprogramtracer.googlecode.com/files/ITRACE.SAVF savf archive] available in the download page or do an SVN checkout from RDp/RDi/WSDC of the complete project source.
 
 == Step 2 ==
 Upload the savf to the IBM i. An example of this procedure can be:
@@ -20,8 +20,10 @@ Upload the savf to the IBM i. An example of this procedure can be:
  * Enter: `put itrace.savf itrace.savf`
  * Enter: `quit`
 
+If you did an SVN checkout, you will just need to push the source code to the IBM i with the help of RDi/WSDC.
+
 == Step 3 ==
-Unpack the uploaded file using `RSTLIB`
+Unpack the uploaded file using `RSTLIB` (only applies if you downloaded the SAVF)
 
 == Step 4 ==
 Compile the installation CL program:
