@@ -1,7 +1,3 @@
-#summary iTrace installation guide.
-
-= Installation guide =
-----
 In order to successfully install the *iTrace* tool in an _IBM i System_, please follow the next steps
 
 == Step 1 ==
