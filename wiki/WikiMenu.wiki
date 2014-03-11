@@ -6,8 +6,5 @@
    * [InstallationGuide How to install]
    * [ConfigurationGuide How to configure]
  * [HowToUse Using iTrace] 
-   * [BasicSamples Basic samples]
-   * [BatchJobTrace Tracing a batch program]
-   * [TestCoverag Test coverage]
  * [FutureWork Future Work]
  * [CreditsReferences Credits & References]
